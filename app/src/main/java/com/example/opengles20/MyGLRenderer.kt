@@ -24,6 +24,7 @@ class MyGLRenderer: GLSurfaceView.Renderer {
     override fun onDrawFrame(gl: GL10?) {
         // Redraw background color
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT)
+        mTriangle.draw()
     }
 
 }
