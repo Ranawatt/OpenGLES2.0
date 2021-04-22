@@ -14,6 +14,19 @@ var triangleCoords = floatArrayOf(     // in counterclockwise order:
 
 class Triangle {
 
+    private val vertexShaderCode =
+        "attribute vec4 vPosition;" +
+                "void main() {" +
+                "  gl_Position = vPosition;" +
+                "}"
+
+    private val fragmentShaderCode =
+        "precision mediump float;" +
+                "uniform vec4 vColor;" +
+                "void main() {" +
+                "  gl_FragColor = vColor;" +
+                "}"
+
     // Set color with red, green, blue and alpha (opacity) values
     val color = floatArrayOf(0.63671875f, 0.76953125f, 0.22265625f, 1.0f)
 

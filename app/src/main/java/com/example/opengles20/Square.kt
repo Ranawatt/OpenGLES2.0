@@ -6,7 +6,7 @@ import java.nio.FloatBuffer
 import java.nio.ShortBuffer
 
 // number of coordinates per vertex in this array
-const val COORDS_PER_VERTEX = 3
+//const val COORDS_PER_VERTEX = 3
 var squareCoords = floatArrayOf(
     -0.5f,  0.5f, 0.0f,      // top left
     -0.5f, -0.5f, 0.0f,      // bottom left
@@ -14,7 +14,7 @@ var squareCoords = floatArrayOf(
     0.5f,  0.5f, 0.0f       // top right
 )
 
-class Square2 {
+class Square {
 
     private val drawOrder = shortArrayOf(0, 1, 2, 0, 2, 3) // order to draw vertices
 
