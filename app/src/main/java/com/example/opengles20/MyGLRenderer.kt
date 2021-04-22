@@ -3,6 +3,7 @@ package com.example.opengles20
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
 import android.opengl.Matrix
+import android.os.SystemClock
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
@@ -14,6 +15,8 @@ class MyGLRenderer: GLSurfaceView.Renderer {
     private val vPMatrix = FloatArray(16)
     private val projectionMatrix = FloatArray(16)
     private val viewMatrix = FloatArray(16)
+
+    private val rotationMatrix = FloatArray(16)
 
     override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
         // Set the background frame color
@@ -35,18 +38,31 @@ class MyGLRenderer: GLSurfaceView.Renderer {
     }
 
     override fun onDrawFrame(gl: GL10?) {
+        val scratch = FloatArray(16)
         // Redraw background color
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT)
 //        mTriangle.draw()
 
-        // Set the camera position (View matrix)
-        Matrix.setLookAtM(viewMatrix, 0, 0f, 0f, -3f, 0f, 0f, 0f, 0f, 1.0f, 0.0f)
+//        // Set the camera position (View matrix)
+//        Matrix.setLookAtM(viewMatrix, 0, 0f, 0f, -3f, 0f, 0f, 0f, 0f, 1.0f, 0.0f)
+//
+//        // Calculate the projection and view transformation
+//        Matrix.multiplyMM(vPMatrix, 0, projectionMatrix, 0, viewMatrix, 0)
 
-        // Calculate the projection and view transformation
-        Matrix.multiplyMM(vPMatrix, 0, projectionMatrix, 0, viewMatrix, 0)
+        // Create a rotation transformation for the triangle
+        val time = SystemClock.uptimeMillis() % 4000L
+        val angle = 0.090f * time.toInt()
+
+        Matrix.setRotateM(rotationMatrix, 0, angle, 0f, 0f, -1.0f)
+
+        // Combine the rotation matrix with the projection and camera view
+        // Note that the vPMatrix factor *must be first* in order
+        // for the matrix multiplication product to be correct.
+        Matrix.multiplyMM(scratch, 0, vPMatrix, 0, rotationMatrix, 0)
 
         // Draw shape
-        mTriangle.draw(vPMatrix)
+//        mTriangle.draw(vPMatrix)
+        mTriangle.draw(scratch)
     }
 
 }
