@@ -16,23 +16,23 @@ var triangleCoords = floatArrayOf(     // in counterclockwise order:
 
 class Triangle {
 
-    private val vertexShaderCode =
-        "attribute vec4 vPosition;" +
-                "void main() {" +
-                "  gl_Position = vPosition;" +
-                "}"
-
 //    private val vertexShaderCode =
-//    // This matrix member variable provides a hook to manipulate
-//        // the coordinates of the objects that use this vertex shader
-//        "uniform mat4 uMVPMatrix;" +
-//                "attribute vec4 vPosition;" +
+//        "attribute vec4 vPosition;" +
 //                "void main() {" +
-//                // the matrix must be included as a modifier of gl_Position
-//                // Note that the uMVPMatrix factor *must be first* in order
-//                // for the matrix multiplication product to be correct.
-//                "  gl_Position = uMVPMatrix * vPosition;" +
+//                "  gl_Position = vPosition;" +
 //                "}"
+
+    // This matrix member variable provides a hook to manipulate
+    // the coordinates of the objects that use this vertex shader
+    private val vertexShaderCode =
+                "uniform mat4 uMVPMatrix;" +
+                "attribute vec4 vPosition;" +
+                "void main() {" +
+                // the matrix must be included as a modifier of gl_Position
+                // Note that the uMVPMatrix factor *must be first* in order
+                // for the matrix multiplication product to be correct.
+                "  gl_Position = uMVPMatrix * vPosition;" +
+                "}"
 
     // Use to access and set the view transformation
     private var vPMatrixHandle: Int = 0

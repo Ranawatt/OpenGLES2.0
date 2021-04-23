@@ -6,6 +6,9 @@ import android.view.MotionEvent
 
 class MyGLSurfaceView(context: Context) : GLSurfaceView(context) {
 
+    companion object {
+        private const val TOUCH_SCALE_FACTOR: Float = 180.0f / 320f
+    }
     private val renderer: MyGLRenderer
 
     private var previousX: Float = 0f
@@ -20,7 +23,7 @@ class MyGLSurfaceView(context: Context) : GLSurfaceView(context) {
         // Set the Renderer for drawing on the GLSurfaceView
         setRenderer(renderer)
         // Render the view only when there is a change in the drawing data
-        renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
+        renderMode = RENDERMODE_WHEN_DIRTY
     }
 
     override fun onTouchEvent(e: MotionEvent): Boolean {
@@ -58,9 +61,7 @@ class MyGLSurfaceView(context: Context) : GLSurfaceView(context) {
 
     }
 
-    companion object {
-        private const val TOUCH_SCALE_FACTOR: Float = 180.0f / 320f
-    }
+
 
 
 }
