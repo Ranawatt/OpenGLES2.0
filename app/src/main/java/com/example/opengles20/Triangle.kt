@@ -7,7 +7,7 @@ import java.nio.ByteOrder
 import java.nio.FloatBuffer
 
 // number of coordinates per vertex in this array
-const val COORDS_PER_VERTEX = 3
+private const val COORDS_PER_VERTEX = 3
 var triangleCoords = floatArrayOf(     // in counterclockwise order:
     0.0f, 0.622008459f, 0.0f,      // top
     -0.5f, -0.311004243f, 0.0f,    // bottom left
