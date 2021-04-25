@@ -61,7 +61,7 @@ class Square {
             GLES20.glLinkProgram(it)
         }
     }
-    private val drawOrder = shortArrayOf(0, 1, 2, 3, 0, 2, 3, 4) // order to draw vertices
+    private val drawOrder = shortArrayOf(0, 1, 2, 0, 2, 3) // order to draw vertices
 
     // initialize vertex byte buffer for shape coordinates
     private val vertexBuffer: FloatBuffer =
@@ -121,8 +121,10 @@ class Square {
                 GLES20.glUniform4fv(colorHandle, 1, color, 0)
             }
 
-            // Draw the triangle
-            GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, vertexCount)
+            // Draw the Square
+            GLES20.glDrawElements(GLES20.GL_TRIANGLES, drawOrder.size, GLES20.GL_UNSIGNED_SHORT, drawListBuffer)
+//            GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, vertexCount)
+//            GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 1, vertexCount)
 
             // Disable vertex array
             GLES20.glDisableVertexAttribArray(it)
