@@ -45,7 +45,7 @@ class MyGLRenderer: GLSurfaceView.Renderer {
         // Redraw background color
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT)
 //        mTriangle.draw()
-
+//        mSquare.draw()
         // Set the camera position (View matrix)
         Matrix.setLookAtM(viewMatrix, 0, 0f, 0f, -3f, 0f, 0f, 0f, 0f, 1.0f, 0.0f)
 
@@ -56,17 +56,18 @@ class MyGLRenderer: GLSurfaceView.Renderer {
 //        val time = SystemClock.uptimeMillis() % 4000L
 //        val angle = 0.090f * time.toInt()
 
-//        Matrix.setRotateM(rotationMatrix, 0, angle, 0f, 0f, -1.0f)
+        Matrix.setRotateM(rotationMatrix, 0, angle, 0f, 0f, -1.0f)
 
         // Combine the rotation matrix with the projection and camera view
         // Note that the vPMatrix factor *must be first* in order
         // for the matrix multiplication product to be correct.
-//        Matrix.multiplyMM(scratch, 0, vPMatrix, 0, rotationMatrix, 0)
+        Matrix.multiplyMM(scratch, 0, vPMatrix, 0, rotationMatrix, 0)
 
         // Draw shape
 //        mTriangle.draw(vPMatrix)
 //        mTriangle.draw(scratch)
-        mSquare.draw()
+        mSquare.draw(scratch)
+
     }
 
 }
