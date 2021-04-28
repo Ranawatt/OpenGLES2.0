@@ -1,2 +1,3 @@
+include ':augmented_faces'
 include ':app'
 rootProject.name = "OpenGLES2.0"
