@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "schemaType": "Real Time Beard Preview",
+    "schemaVersion": "2.1",
+    "minimumAppVersion": "1.4",
+    "configVersion": "2.1",
+    "randomOrder": 0
+  },
+  "styles": [
+    {
+      "type": "NECKLINE",
+      "id": "NECKLINE",
+      "styleName": "Neck line",
+      "description": "DigitalFilter_Line",
+      "layers": [
+        {
+          "part": "DigitalFilter_Line",
+          "version": 1.0,
+          "filter": "DIGITALLINE",
+          "assetid": "",
+          "dynamicLighting": 0,
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0",
+          "line": [
+            {
+              "linePart":[
+                {
+                  "pointNr":288,
+                  "xOffset":"0.075",
+                  "yOffset":"-0.450",
+                  "zOffset":"-0.75",
+                  "controlPoint":0
+                },
+                {
+                  "pointNr":58,
+                  "xOffset":"-0.075",
+                  "yOffset":"-0.450",
+                  "zOffset":"-0.75",
+                  "controlPoint":0
+                },
+                {
+                  "pointNr":152,
+                  "xOffset":"0.0",
+                  "yOffset":"-0.450",
+                  "zOffset":"-0.75",
+                  "controlPoint":1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_CURVED_HIGH",
+      "styleName": "Cheekline Curved High",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_curved_high",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "xOffset": "0.0",
+          "yOffset": "0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_CURVED_MEDIUM",
+      "styleName": "Cheekline Curved Medium",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_curved_medium",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_CURVED_LOW",
+      "styleName": "Cheekline Curved Low",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_curved_low",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1NXuuDt4Dd5D5JypANSnSZdOV_8Lr6Ofs",
+          "xOffset": "0.0",
+          "yOffset": "-0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_ANGLED_HIGH",
+      "styleName": "Cheekline Angled High",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_angled_high",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "xOffset": "0.0",
+          "yOffset": "0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_ANGLED_MEDIUM",
+      "styleName": "Cheekline Angled Medium",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_angled_medium",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_ANGLED_LOW",
+      "styleName": "Cheekline Angled Low",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_angled_low",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1DTxM_GRvA7KOLAOXb93zGXbrsC70hwzg",
+          "xOffset": "0.0",
+          "yOffset": "-0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_DOUBLE_ANGLED_HIGH",
+      "styleName": "Cheekline Double Angled High",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_doubleangled_high",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "xOffset": "0.0",
+          "yOffset": "0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_DOUBLE_ANGLED_MEDIUM",
+      "styleName": "Cheekline Double Angled Medium",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_doubleangled_medium",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_DOUBLE_ANGLED_LOW",
+      "styleName": "Cheekline Double Angled Low",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_doubleangled_low",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1IX-zusMX66qLTim4ZjXQq0uMNP0QWciw",
+          "xOffset": "0.0",
+          "yOffset": "-0.009",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_STRAIGHT_HIGH",
+      "styleName": "Cheekline Straight High",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_straight_high",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1siHTVER_VTtQv6DkIxaMTOo_vtpWJfOk",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1siHTVER_VTtQv6DkIxaMTOo_vtpWJfOk",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1siHTVER_VTtQv6DkIxaMTOo_vtpWJfOk",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1siHTVER_VTtQv6DkIxaMTOo_vtpWJfOk",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_STRAIGHT_MEDIUM",
+      "styleName": "Cheekline Straight Medium",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_straight_medium",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1JPSrSN3BhcbhbUylVMQW4skkjkut8uHk",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1JPSrSN3BhcbhbUylVMQW4skkjkut8uHk",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1JPSrSN3BhcbhbUylVMQW4skkjkut8uHk",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1JPSrSN3BhcbhbUylVMQW4skkjkut8uHk",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "CHEEKLINE",
+      "id": "CHEEKLINE_STRAIGHT_LOW",
+      "styleName": "Cheekline Straight Low",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "empty",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "cheekline_straight_low",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1vgL7_m_-V4GcTjo4TZgQhpdox7IEz50G",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1vgL7_m_-V4GcTjo4TZgQhpdox7IEz50G",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1vgL7_m_-V4GcTjo4TZgQhpdox7IEz50G",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1vgL7_m_-V4GcTjo4TZgQhpdox7IEz50G",
+          "xOffset": "0.0",
+          "yOffset": "0.0",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    },
+    {
+      "type": "MUSTACHE",
+      "id": "MUSTACHE",
+      "styleName": "Mustache",
+      "description": "",
+      "dynamicLighting": 0,
+      "layers": [
+        {
+          "part": "Mustache line",
+          "version": 1.0,
+          "filter": "IMAGELAYER",
+          "assetid": "mustache_line",
+          "urlBlack": "https://drive.google.com/uc?export=download&id=1iHZFGfmgg3HprGvgvFo60hNBDASq40tu",
+          "urlBlond": "https://drive.google.com/uc?export=download&id=1iHZFGfmgg3HprGvgvFo60hNBDASq40tu",
+          "urlBrown": "https://drive.google.com/uc?export=download&id=1iHZFGfmgg3HprGvgvFo60hNBDASq40tu",
+          "urlRed": "https://drive.google.com/uc?export=download&id=1iHZFGfmgg3HprGvgvFo60hNBDASq40tu",
+          "xOffset": "0.0",
+          "yOffset": "-0.005",
+          "zOffset": "0.0",
+          "xScale": "1.0",
+          "yScale": "1.0",
+          "zScale": "1.0"
+        }
+      ]
+    }
+  ]
+}

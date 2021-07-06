@@ -1,0 +1,78 @@
+{
+  "styles": [
+    {
+      "id": "CHEVRON",
+      "routinesteps": [
+        {
+          "type": "PREPARATION",
+          "sequence": 1,
+          "description": "Brush your beard and mustache with a comb. \n",
+          "title": "Preparation",
+          "tools": "",
+          "size": ""
+        },
+        {
+          "type": "FACETRIM",
+          "sequence": 2,
+          "description": "Attach the OneBlade comb and set to 5mm. \n\nTrim against the hair growth across the whole beard and mustache.",
+          "title": "Face Trim",
+          "tools": "comb",
+          "size": "5 mm"
+        },
+        {
+          "type": "MUSTACHE",
+          "sequence": 3,
+          "description": "Hold the OneBlade slightly angled to the skin. \n\nStart from one of the lip picks in the center and go to corner of your mouth.",
+          "title": "Mustache",
+          "tools": "",
+          "size": "no comb"
+        }
+      ]
+    },
+    {
+      "id": "SHORTBEARD",
+      "routinesteps": [
+        {
+          "type": "PREPARATION",
+          "sequence": 1,
+          "description": "Brush your beard and mustache with a comb.\n",
+          "title": "Preparation",
+          "tools": "",
+          "size": ""
+        },
+        {
+          "type": "FACETRIM",
+          "sequence": 2,
+          "description": "Attach the OneBlade comb and set to 5mm. \n\nTrim against the hair growth across the whole beard and mustache.",
+          "title": "Face Trim",
+          "tools": "comb",
+          "size": "5 mm"
+        },
+        {
+          "type": "NECKLINE",
+          "sequence": 3,
+          "description": "Remove the OneBlade comb. \n\nTilt your head back while looking at your phone. \n\nShave off hair below the line. \n\nStart at the center and create the neckline by using short strokes and trim towards the corner of the jaw",
+          "title": "Neckline",
+          "tools": "",
+          "size": "no comb"
+        },
+        {
+          "type": "CHEEKLINE",
+          "sequence": 4,
+          "description": "Start from earlobe, hold the Oneblade perpendicular to create a line. \n\nUse short strokes and trim towards the center of your face. \n\nShave off everything above the line",
+          "title": "Cheekline",
+          "tools": "",
+          "size": "no comb"
+        },
+        {
+          "type": "MUSTACHE",
+          "sequence": 5,
+          "description": "Hold the OneBlade slightly angled to the skin. \n\nStart from one of the lip picks in the center and go to corner of your mouth.",
+          "title": "Mustache",
+          "tools": "",
+          "size": "no comb"
+        }
+      ]
+    }
+  ]
+}
